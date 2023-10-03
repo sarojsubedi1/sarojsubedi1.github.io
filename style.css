@@ -15,9 +15,10 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: var(--bg);
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.99' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6.24' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-blend-mode: multiply;
   margin: 3rem;
 }
@@ -49,7 +50,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 18px;
+  font-size: 25px;
   font-family: "maragsa", sans-serif;
   font-weight: 900;
   padding: 1rem 2rem;
@@ -128,25 +129,13 @@ main .hero > .intro >.grid-container > .contact{
 
 main .hero>.image {
   width: 50%;
-  aspect-ratio: 1;
   border-left: 2px solid var(--fg);
 }
 
 main .hero>.image img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1;
   object-fit: cover;
-}
-
-/*About*/
-#about > .heading{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem;
-  border: 2px solid var(--fg);
-  border-top: none;
 }
 
 /*Projects*/
@@ -171,22 +160,97 @@ main .hero>.image img {
   margin-bottom: 3rem;
 }
 
-#all-projects>.project>.title {
+#all-projects>.project>.screenshot{
+  width: 50%;
+  padding: 0 2rem;
+  margin-top: 8rem;
+}
+
+#all-projects>.project>.screenshot img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#all-projects>.project>.container{
+  width: 50%;
+
+}
+
+#all-projects>.project>.container> p{
+  padding-left: 2rem;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+#all-projects>.project>.container>.title {
   display: flex;
   padding: 1rem 2rem;
 }
 
-#all-projects>.project>.title>.title-items {
+#all-projects>.project>.container>.title>.title-items {
   padding: 1rem 2rem;
   font-size: 30px;
+  font-family: "maragsa", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid var(--fg);
 }
 
-#all-projects>.project>.title>.index {
+#all-projects>.project>.container>.title>.index {
   font-size: 70px;
   font-weight: 900;
   border-right: 2px solid var(--fg);
+}
+
+#all-projects>.project>.container>.button{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+
+#all-projects>.project>.container>.button > button{
+  background-color: rgb(255, 102, 0);
+  color: white;
+  font-size: 25px;
+  padding: 1rem;
+  border: 1px solid var(--fg);
+  box-shadow: 2px;
+}
+
+/*About*/
+#about{
+  border: 2px solid var(--fg);
+  border-top: none;
+}
+
+#about > .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "maragsa", sans-serif;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--fg);
+}
+
+#about > .dec{
+  margin: 3rem;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/*Contact*/
+#contact {
+  border: 2px solid var(--fg);
+  border-top: none;
+}
+
+#contact > .heading{
+  display: flex;
+  justify-content: center;
+  font-family: "maragsa", sans-serif;
+  align-items: center;
+  padding: 1rem 2rem;
 }
