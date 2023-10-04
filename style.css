@@ -1,6 +1,7 @@
 :root {
   --bg: #c8c8c6;
   --fg: #141414;
+  --secondary: rgb(255, 102, 0);
 }
 
 @font-face {
@@ -13,6 +14,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
 }
 
 
@@ -70,6 +75,15 @@ main .hero{
   border-left:2px solid var(--fg) ;
   border-right:2px solid var(--fg) ;
   display: flex;
+  padding-bottom: 3rem;
+}
+
+main .hero > .intro {
+  margin-top: 6rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 main .hero > .intro > .disc > h1 span{
@@ -85,51 +99,36 @@ main .hero > .intro > .disc{
   font-size: 20px;
 }
 
-main .hero > .intro {
-  margin-top: 6rem;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-main .hero > .intro >.grid-container{
-  border-top: 2px solid var(--fg);
+main .hero > .intro > .button{
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin-top: 5rem;
 }
 
-main .hero > .intro >.grid-container > .grid-items{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  border-left: 2px solid var(--fg);
-
-  font-size: 18px;
-  font-family: "maragsa", sans-serif;
+main .hero > .intro > .button button{
+  background-color: var(--secondary);
+  font-size: 25px;
   font-weight: 900;
-  color: var(--fg);
-  transition: background-color 1s;
+  font-family: "maragsa", sans-serif;
+  padding: 1rem;
+  border: 2px solid var(--fg);
+  transition: scale 0.5s ease-out,box-shadow 1s ease-out;
 }
 
-main .hero > .intro >.grid-container > .grid-items:hover{
-  background-color: var(--fg);
-  color: var(--bg);
-}
-main .hero > .intro >.grid-container > .grid-items:nth-child(2){
-  border-left: none;
+main .hero > .intro > .button button:hover{
+  box-shadow: 3px 3px var(--fg);
+  scale: 1.05;
 }
 
-main .hero > .intro >.grid-container > .contact{
-  grid-column: 1/4;
-  border-bottom: 2px solid var(--fg);
-  border-left: none;
+main .hero > .intro > .button button a{
+  color: white;
 }
 
 main .hero>.image {
   width: 50%;
   border-left: 2px solid var(--fg);
+  border-bottom: 2px solid var(--fg);
 }
 
 main .hero>.image img {
@@ -212,12 +211,22 @@ main .hero>.image img {
 }
 
 #all-projects>.project>.container>.button > button{
-  background-color: rgb(255, 102, 0);
-  color: white;
+  background-color: var(--secondary);
+  font-family: "maragsa", sans-serif;
   font-size: 25px;
+  font-weight: 900;
   padding: 1rem;
-  border: 1px solid var(--fg);
-  box-shadow: 2px;
+  border: 2px solid var(--fg);
+  transition: scale 0.5s ease-out,box-shadow 1s ease-out;
+}
+
+#all-projects>.project>.container>.button > button:hover{
+  box-shadow: 3px 3px var(--fg);
+  scale: 1.05;
+}
+
+#all-projects>.project>.container>.button > button a{
+  color: white;
 }
 
 /*About*/
