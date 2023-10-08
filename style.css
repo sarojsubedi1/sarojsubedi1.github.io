@@ -279,6 +279,12 @@ main .hero>.image img {
   gap: 3rem;
 }
 
+@media (max-width: 700px) {
+.contact-container{
+    display: block;
+  }
+}
+
 .contact-items{
   flex: 1;
 }
