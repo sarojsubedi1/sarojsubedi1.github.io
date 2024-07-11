@@ -1,0 +1,56 @@
+#schedule {
+  margin: 0 100px 100px 100px;
+}
+
+#schedule h3 {
+  color: var(--fg-main);
+  font-size: var(--text-dk);
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#schedule .date {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#schedule .date .event {
+  padding: 0px 20px;
+  background: var(--blue);
+  z-index: 1;
+}
+
+#schedule .date .event {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#schedule .date .event p {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--bg-main);
+}
+
+#schedule .date .event .day {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+#schedule .date .event p:nth-child(2) {
+  padding: 0;
+  font-size: 60px;
+  background: var(--bg-main);
+  color: var(--blue);
+}
+
+#schedule .vrt_container p {
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-weight: 900;
+  font-size: 80px;
+  position: relative;
+  color: var(--fg-main);
+}
