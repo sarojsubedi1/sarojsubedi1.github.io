@@ -19,3 +19,16 @@ footer div:nth-child(2) a {
 footer div:nth-child(2) a:hover {
   color: var(--fg-alt);
 }
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 0px 10px;
+    font-size: 12px;
+  }
+  footer div:nth-child(2) {
+    gap: 10px;
+  }
+  footer div:nth-child(2) a {
+    font-size: 14px;
+  }
+}
