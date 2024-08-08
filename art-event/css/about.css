@@ -57,7 +57,8 @@
 
 @media screen and (max-width: 480px) {
   #about {
-    display: inline;
+    flex-direction: column-reverse;
+    margin: -50px 10px 40px 10px;
   }
   #about div:nth-child(2) .overlay {
     font-size: 60px;
