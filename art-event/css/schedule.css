@@ -17,7 +17,7 @@
 
 #schedule .date .event {
   padding: 0px 20px;
-  background: var(--blue);
+  background: var(--fg-alt);
   z-index: 1;
 }
 
@@ -42,7 +42,7 @@
   padding: 0;
   font-size: 60px;
   background: var(--bg-main);
-  color: var(--blue);
+  color: var(--fg-alt);
 }
 
 #schedule .vrt_container p {
